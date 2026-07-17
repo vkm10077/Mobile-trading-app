@@ -1,14 +1,10 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return """
-    <h1>📱 Mobile Trading App</h1>
-    <p>Version 1.0</p>
-    <p>Server is Running Successfully ✅</p>
-    """
+    return render_template("index.html")
 
 @app.route("/health")
 def health():
