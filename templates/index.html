@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Mobile Trading App</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header class="top-header">
+        <div>
+            <h1>📱 Mobile Trading App</h1>
+            <p>FYERS Live Trading Dashboard</p>
+        </div>
+
+        <div class="market-status">
+            <span class="status-dot"></span>
+            Server Online
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="welcome-card">
+            <h2>Welcome to Trading Dashboard</h2>
+
+            <p>
+                Server is running successfully.
+                अब हम FYERS Login और Live Market Data जोड़ेंगे।
+            </p>
+
+            <a href="/login" class="login-button">
+                Login with FYERS
+            </a>
+        </section>
+
+
+        <section class="section-card">
+
+            <div class="section-heading">
+                <h2>Market Overview</h2>
+                <span>Demo Layout</span>
+            </div>
+
+            <div class="index-grid">
+
+                <div class="index-card">
+                    <p>NIFTY 50</p>
+                    <h3>--</h3>
+                    <span>Waiting for live data</span>
+                </div>
+
+                <div class="index-card">
+                    <p>BANK NIFTY</p>
+                    <h3>--</h3>
+                    <span>Waiting for live data</span>
+                </div>
+
+                <div class="index-card">
+                    <p>SENSEX</p>
+                    <h3>--</h3>
+                    <span>Waiting for live data</span>
+                </div>
+
+                <div class="index-card">
+                    <p>INDIA VIX</p>
+                    <h3>--</h3>
+                    <span>Waiting for live data</span>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="section-card">
+
+            <div class="section-heading">
+                <h2>Live Scalping Signal</h2>
+                <span>9 EMA + 15 EMA</span>
+            </div>
+
+            <div class="empty-box">
+                अभी कोई live signal उपलब्ध नहीं है।
+            </div>
+
+        </section>
+
+
+        <section class="section-card">
+
+            <div class="section-heading">
+                <h2>Smart Stock Scanner</h2>
+                <span>NIFTY 500</span>
+            </div>
+
+            <input
+                type="text"
+                class="search-box"
+                placeholder="Search stock, example: RELIANCE">
+
+            <div class="empty-box">
+                FYERS Live Data connect होने के बाद stocks यहाँ दिखेंगे।
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        Mobile Trading App Version 1.0
+    </footer>
+
+</body>
+</html>
